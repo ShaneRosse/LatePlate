@@ -13,9 +13,11 @@
 		972A00DC1CB8B1F100D92E76 /* LatePlate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 972A00DA1CB8B1F100D92E76 /* LatePlate.xcdatamodeld */; };
 		972A00DE1CB8B1F100D92E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972A00DD1CB8B1F100D92E76 /* Assets.xcassets */; };
 		972A00E11CB8B1F100D92E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972A00DF1CB8B1F100D92E76 /* LaunchScreen.storyboard */; };
+		D316397148A92657D8FC91E7 /* Pods_LatePlate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668D4DAAB8AEBB6AC9A7AD83 /* Pods_LatePlate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		668D4DAAB8AEBB6AC9A7AD83 /* Pods_LatePlate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LatePlate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		972A00D01CB8B1F100D92E76 /* LatePlate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatePlate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972A00D31CB8B1F100D92E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		972A00D51CB8B1F100D92E76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		972A00DD1CB8B1F100D92E76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		972A00E01CB8B1F100D92E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		972A00E21CB8B1F100D92E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE1DC9647A9C10810F7EDA50 /* Pods-LatePlate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatePlate.release.xcconfig"; path = "Pods/Target Support Files/Pods-LatePlate/Pods-LatePlate.release.xcconfig"; sourceTree = "<group>"; };
+		EF46B87BDC7267597D149E1C /* Pods-LatePlate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatePlate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LatePlate/Pods-LatePlate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D316397148A92657D8FC91E7 /* Pods_LatePlate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10F20B6B7574F4DB153D3B60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				668D4DAAB8AEBB6AC9A7AD83 /* Pods_LatePlate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		972A00C71CB8B1F100D92E76 = {
 			isa = PBXGroup;
 			children = (
 				972A00D21CB8B1F100D92E76 /* LatePlate */,
 				972A00D11CB8B1F100D92E76 /* Products */,
+				B5004709D0D4D97BDBB6B5B4 /* Pods */,
+				10F20B6B7574F4DB153D3B60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = LatePlate;
 			sourceTree = "<group>";
 		};
+		B5004709D0D4D97BDBB6B5B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF46B87BDC7267597D149E1C /* Pods-LatePlate.debug.xcconfig */,
+				EE1DC9647A9C10810F7EDA50 /* Pods-LatePlate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 972A00E51CB8B1F100D92E76 /* Build configuration list for PBXNativeTarget "LatePlate" */;
 			buildPhases = (
+				EFBB4E6129598AF88B7F78B7 /* Check Pods Manifest.lock */,
 				972A00CC1CB8B1F100D92E76 /* Sources */,
 				972A00CD1CB8B1F100D92E76 /* Frameworks */,
 				972A00CE1CB8B1F100D92E76 /* Resources */,
+				5906A6064CBC72896100DFDA /* Embed Pods Frameworks */,
+				3114E1A9618905F23C83DEFA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3114E1A9618905F23C83DEFA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LatePlate/Pods-LatePlate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5906A6064CBC72896100DFDA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LatePlate/Pods-LatePlate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFBB4E6129598AF88B7F78B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		972A00CC1CB8B1F100D92E76 /* Sources */ = {
@@ -251,9 +326,11 @@
 		};
 		972A00E61CB8B1F100D92E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF46B87BDC7267597D149E1C /* Pods-LatePlate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LatePlate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PiKapp.LatePlate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,9 +339,11 @@
 		};
 		972A00E71CB8B1F100D92E76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1DC9647A9C10810F7EDA50 /* Pods-LatePlate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LatePlate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PiKapp.LatePlate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +369,7 @@
 				972A00E71CB8B1F100D92E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
