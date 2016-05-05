@@ -31,20 +31,6 @@ class FeedbackVC: UIViewController, WDStarRatingDelegate {
         submitButton.layer.cornerRadius = 10
     }
     
-//    func getFBName() -> String {
-//        var fb_name: String = "Anonymous"
-//        if FBSDKAccessToken.currentAccessToken() != nil {
-//            FBSDKGraphRequest.init(graphPath: "me", parameters:["fields": "name"] ).startWithCompletionHandler({ (fbconn, result, err) in
-//                if err == nil {
-//                    print("Here... \(result)")
-//                    let info: Dictionary<String, AnyObject>! = result as? Dictionary
-//                    fb_name = info["name"] as! String
-//                }
-//            })
-//        }
-//        return fb_name
-//    }
-    
     func getTodayDate() -> String {
         let date = NSDate()
         let calendar = NSCalendar.currentCalendar()
