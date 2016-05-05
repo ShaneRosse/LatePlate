@@ -7,6 +7,8 @@ use_frameworks!
 target 'LatePlate' do
 
 pod 'Firebase', '>= 2.5.1'
+pod 'FBSDKLoginKit', '~> 4.11'
+pod 'HMWDStarRatingView', '~> 0.4'
 
 end
 

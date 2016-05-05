@@ -13,6 +13,11 @@
 		972A00DC1CB8B1F100D92E76 /* LatePlate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 972A00DA1CB8B1F100D92E76 /* LatePlate.xcdatamodeld */; };
 		972A00DE1CB8B1F100D92E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972A00DD1CB8B1F100D92E76 /* Assets.xcassets */; };
 		972A00E11CB8B1F100D92E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972A00DF1CB8B1F100D92E76 /* LaunchScreen.storyboard */; };
+		9730CC5F1CD94F4000D13FB4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730CC5E1CD94F4000D13FB4 /* LoginVC.swift */; };
+		9730CC621CD955A400D13FB4 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9730CC601CD955A400D13FB4 /* FBSDKCoreKit.framework */; };
+		9730CC631CD955A400D13FB4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9730CC611CD955A400D13FB4 /* FBSDKLoginKit.framework */; };
+		97614C7C1CD9C4F900179FF0 /* HMWDStarRatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97614C7B1CD9C4F900179FF0 /* HMWDStarRatingView.framework */; };
+		97920F5B1CD9BE5000DD5DCD /* FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97920F5A1CD9BE5000DD5DCD /* FeedbackVC.swift */; };
 		D316397148A92657D8FC91E7 /* Pods_LatePlate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668D4DAAB8AEBB6AC9A7AD83 /* Pods_LatePlate.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +31,11 @@
 		972A00DD1CB8B1F100D92E76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		972A00E01CB8B1F100D92E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		972A00E21CB8B1F100D92E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9730CC5E1CD94F4000D13FB4 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		9730CC601CD955A400D13FB4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/LatePlate-blmznxkwywidkbglgokqnojqhnsw/Build/Products/Debug-iphonesimulator/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		9730CC611CD955A400D13FB4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/LatePlate-blmznxkwywidkbglgokqnojqhnsw/Build/Products/Debug-iphonesimulator/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		97614C7B1CD9C4F900179FF0 /* HMWDStarRatingView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HMWDStarRatingView.framework; path = "../../../Library/Developer/Xcode/DerivedData/LatePlate-blmznxkwywidkbglgokqnojqhnsw/Build/Products/Debug-iphoneos/HMWDStarRatingView.framework"; sourceTree = "<group>"; };
+		97920F5A1CD9BE5000DD5DCD /* FeedbackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
 		EE1DC9647A9C10810F7EDA50 /* Pods-LatePlate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatePlate.release.xcconfig"; path = "Pods/Target Support Files/Pods-LatePlate/Pods-LatePlate.release.xcconfig"; sourceTree = "<group>"; };
 		EF46B87BDC7267597D149E1C /* Pods-LatePlate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatePlate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LatePlate/Pods-LatePlate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97614C7C1CD9C4F900179FF0 /* HMWDStarRatingView.framework in Frameworks */,
+				9730CC621CD955A400D13FB4 /* FBSDKCoreKit.framework in Frameworks */,
+				9730CC631CD955A400D13FB4 /* FBSDKLoginKit.framework in Frameworks */,
 				D316397148A92657D8FC91E7 /* Pods_LatePlate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +58,9 @@
 		10F20B6B7574F4DB153D3B60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97614C7B1CD9C4F900179FF0 /* HMWDStarRatingView.framework */,
+				9730CC601CD955A400D13FB4 /* FBSDKCoreKit.framework */,
+				9730CC611CD955A400D13FB4 /* FBSDKLoginKit.framework */,
 				668D4DAAB8AEBB6AC9A7AD83 /* Pods_LatePlate.framework */,
 			);
 			name = Frameworks;
@@ -73,6 +89,8 @@
 			children = (
 				972A00D31CB8B1F100D92E76 /* AppDelegate.swift */,
 				972A00D51CB8B1F100D92E76 /* ViewController.swift */,
+				9730CC5E1CD94F4000D13FB4 /* LoginVC.swift */,
+				97920F5A1CD9BE5000DD5DCD /* FeedbackVC.swift */,
 				972A00D71CB8B1F100D92E76 /* Main.storyboard */,
 				972A00DD1CB8B1F100D92E76 /* Assets.xcassets */,
 				972A00DF1CB8B1F100D92E76 /* LaunchScreen.storyboard */,
@@ -214,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				972A00DC1CB8B1F100D92E76 /* LatePlate.xcdatamodeld in Sources */,
+				97920F5B1CD9BE5000DD5DCD /* FeedbackVC.swift in Sources */,
 				972A00D61CB8B1F100D92E76 /* ViewController.swift in Sources */,
+				9730CC5F1CD94F4000D13FB4 /* LoginVC.swift in Sources */,
 				972A00D41CB8B1F100D92E76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

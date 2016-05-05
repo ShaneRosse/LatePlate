@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FBSDKCoreKit
 
 class ViewController: UIViewController {
     
@@ -16,8 +17,32 @@ class ViewController: UIViewController {
     @IBOutlet var backgroundView: UIView!
     
     let db_url: String = "https://blazing-heat-9345.firebaseio.com"
+    var userFBName: String! = ""
     
+    func fillTextField() {
+        if FBSDKAccessToken.currentAccessToken() != nil {
+            FBSDKGraphRequest.init(graphPath: "me", parameters:["fields": "name"] ).startWithCompletionHandler({ (fbconn, result, err) in
+                if err == nil {
+                    print("Here... \(result)")
+                    let info: Dictionary<String, AnyObject>! = result as? Dictionary
+                    let fbName: String! = info["name"] as? String
+                    self.nameField.text = fbName
+                    let appD: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    appD.userFBName = fbName
+                }
+            })
+        }
+        
+    }
     
+    override func viewWillAppear(animated: Bool) {
+        fillTextField()
+        signupButton.layer.cornerRadius = 10
+    }
+    
+    func giveGBName() -> String {
+        return userFBName
+    }
     
     
     override func viewDidLoad() {
@@ -39,7 +64,7 @@ class ViewController: UIViewController {
     @IBAction func signupTouch(sender: AnyObject) {
         
         let myRootRef = Firebase(url: db_url)
-        let myUserRef = myRootRef.childByAppendingPath("users")
+        let myUserRef = myRootRef.childByAppendingPath("prod/users")
         
         if let name = nameField.text {
             let uniqueRef = myUserRef.childByAutoId()

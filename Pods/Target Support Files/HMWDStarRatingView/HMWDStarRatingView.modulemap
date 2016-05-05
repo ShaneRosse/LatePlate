@@ -1,0 +1,6 @@
+framework module HMWDStarRatingView {
+  umbrella header "HMWDStarRatingView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -84,8 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-LatePlate/Bolts.framework"
+  install_framework "Pods-LatePlate/FBSDKCoreKit.framework"
+  install_framework "Pods-LatePlate/FBSDKLoginKit.framework"
   install_framework "Pods-LatePlate/Firebase.framework"
+  install_framework "Pods-LatePlate/HMWDStarRatingView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-LatePlate/Bolts.framework"
+  install_framework "Pods-LatePlate/FBSDKCoreKit.framework"
+  install_framework "Pods-LatePlate/FBSDKLoginKit.framework"
   install_framework "Pods-LatePlate/Firebase.framework"
+  install_framework "Pods-LatePlate/HMWDStarRatingView.framework"
 fi
